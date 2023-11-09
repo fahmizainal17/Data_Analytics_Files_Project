@@ -1,0 +1,29 @@
+SELECT DISTINCT(sub_category)
+FROM products
+WHERE product_name ILIKE ‘%xerox%’;
+
+Answer paper and machines
+
+SELECT COUNT(DISTINCT country)
+FROM regions
+WHERE sub_region = ‘Western Europe’;
+
+Answer 6
+
+SELECT COUNT(DISTINCT customer_name)
+FROM customers
+WHERE customer_name LIKE ‘S%’ AND segment =’Consumer’;
+
+Answer 35
+
+SELECT SUM(return_quantity)
+FROM returns
+WHERE reason_returned !=’Not Given’;
+
+Answer 31781
+
+SELECT COUNT(DISTINCT order_id)
+FROM orders
+WHERE ship_mode =”Standard Class’ AND discount > 0
+
+Answer 385615
